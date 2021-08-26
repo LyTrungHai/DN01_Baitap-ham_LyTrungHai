@@ -14,7 +14,9 @@ function tienTruocThue(luong1Nam, nguoiPhuThuoc, phanTram) {
 
 function tinhTienThue() {
   var luong1Nam = parseInt(document.getElementById("totalSalary").value);
-  var nguoiPhuThuoc = parseInt(document.getElementById("inputDepend").value);
+  var nguoiPhuThuoc = parseInt(
+    document.getElementById("inputDepend").value || 0
+  );
   var tenNguoiDongThue = document.getElementById("inputName1").value;
 
   if (luong1Nam > 0 && luong1Nam <= 6e7) {
